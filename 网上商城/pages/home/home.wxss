@@ -1,0 +1,77 @@
+/* pages/home/home.wxss */
+/* #main{
+ height: 2000rpx;
+
+} */
+
+#search_wrap input{ 
+  float: left;
+  width: 600rpx;
+  height: 80rpx;
+  border: 2rpx solid red;
+  background-color:#F8F8FF;
+}
+
+#search_wrap button{
+  float: left;
+  width: 140rpx;
+  height:85rpx;
+  margin-left: 1rpx;
+  border: 2rpx solid red;
+  background-color:	#F8F8FF;
+}
+
+#wrap swiper image {
+    margin-top: 10rpx;
+}
+
+
+
+#sou{
+ position: absolute;
+ font-size: 39rpx;
+ margin-left: -4rpx;
+ line-height: 85rpx;
+
+} 
+
+#sale{
+  margin-top: 90rpx;
+  
+}
+
+#sale image{
+  border: 2rpx solid red;
+  margin-top: 10rpx;
+  height: 200rpx;
+  width: 99%;
+}
+
+#pics{
+  border-bottom: 1rpx solid red;
+  width: 100%;
+  height: 400rpx;
+}
+
+#list{
+  float: left;
+  width: 50%;
+  height: 300rpx;
+}
+
+#list image{
+  width: 98%;
+  height:98%;
+  border: 1rpx solid red;
+}
+
+#share image{
+  width: 99%;
+  margin-top: 3rpx;
+  height: 220rpx;
+  border: 1rpx solid red;
+}
+
+ /* #list:nth-child(1),#list:nth-child(3){
+  border-right: 1rpx solid red;
+}  */

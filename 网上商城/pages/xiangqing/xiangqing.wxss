@@ -1,0 +1,14 @@
+/* pages/xiangqing/xiangqing.wxss */
+page{
+  background: white;
+}
+
+/* .b{
+  width: 100%;
+  height: 80rpx;
+  background: #fff;
+}
+.c{
+  width: 50%;
+  float: left;
+} */

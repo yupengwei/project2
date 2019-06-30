@@ -1,0 +1,43 @@
+<!--pages/home/home.wxml-->
+
+
+  <view id='search_wrap'>
+  <input></input>
+  <button><view id="sou">搜索</view></button>
+  </view>
+
+
+<view id='wrap'>
+<swiper indicator-dots='true' circular='true'  autoplay="{{autoplay}}"                         indicator-color='rgba(255,255,0,128)'           indicator-active-color='red'   interval="    {{interval}}" duration="{{duration}}">
+   <block wx:for="{{imgUrls}}">
+ <swiper-item>
+ <image src="{{item}}" class="slide-image"  width= '355'  height='150'/>
+  </swiper-item>
+  </block>
+  </swiper>
+</view>
+
+
+
+<view id="sale">
+   <image src='/images/QQ图片20180607203.jpg'></image>
+</view>
+
+
+<view id='pics'>
+  <block wx:for= "{{pictures}}">
+<view id='list'>
+  <image src= "{{item}}"></image>
+</view>
+  </block>
+</view>
+
+
+<view id="share">
+  <image src='/images/QQ图片2018060727550.jpg'></image>
+</view>
+
+
+
+
+

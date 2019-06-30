@@ -1,0 +1,60 @@
+/* pages/classify/classify.wxss */
+
+/* .navigator{
+  border: 5rpx solid white;
+  height: 100rpx;
+  width: 100%;
+} */
+
+
+.nav_warp{
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+}
+
+ .nav_warp text{
+  display: inline-block;
+  width: 25%;
+  font-size: 40rpx;
+  font-weight: 10rpx;
+} 
+.on{
+  background: orange;
+  color: #000;
+}
+
+/* .navigator view{
+  display: block;
+  float: left;
+  line-height: 100rpx;
+  margin-left: 80rpx;
+}
+
+.body image{
+  float: left;
+  width: 50%;
+  border: 5rpx solid red;
+  box-sizing: border-box;
+} */
+
+.list{
+  width: 50%;
+  float: left;
+  padding: 10rpx;
+  box-sizing: border-box;
+
+}
+
+.list image{
+  width: 100%;
+}
+
+.list .pro{
+  /*可使区域外不可见  */
+  overflow: hidden;
+  /*文字省略  */
+  text-overflow: ellipsis;
+  /*强制不换行  */
+  white-space: nowrap;
+}

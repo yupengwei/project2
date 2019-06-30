@@ -1,0 +1,204 @@
+/* pages/cart/cart.wxss */
+page {
+  background: #F5F5F5;
+  padding-bottom: 80rpx;
+}
+
+.cart{
+  padding: 320rpx 0 0 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #999;
+}
+
+.cart image {
+  width: 300rpx;
+  height: 240rpx;
+  margin-bottom: 100rpx;
+}
+
+.baoyou {
+  font-size: 18px;
+  color: #db2929;
+  padding: 10px;
+}
+
+.goods {
+  background: #fff;
+  border-top: 1px solid #f5f5f5;
+  padding: 10px 10px 0 10px;
+  display: flex;
+}
+
+.goods .good_left {
+  display: inline-block;
+  line-height: 190rpx;
+}
+
+.goods image {
+  width: 80px;
+  height: 80px;
+  border: 1px solid #ddd;
+}
+
+.goods .minImg {
+  display: inline-block;
+  padding-top: 20rpx;
+}
+
+.goods .good-cont {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  color: #555;
+  font-size: 14px;
+  padding: 5px;
+  height: 100px;
+}
+
+.goods .good-cont .goods-navigator {
+  height: 122rpx;
+  position: relative;
+}
+
+.goods .good-cont .goods-navigator text {
+  width: 80%;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
+}
+
+.goods .good-cont .good-price {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+}
+
+.goods .good-cont .good-price .price {
+  font-size: 40rpx;
+  color: #ec5151;
+  line-height: 60rpx;
+}
+
+.goods .good-cont .good-price .price text {
+  font-size: 32rpx;
+}
+
+.goods .good-cont .good-price .btn-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.goods .good-cont .goods-navigator image {
+  width: 36rpx;
+  height: 36rpx;
+  border: 0;
+  margin: 0;
+  float: right;
+  position: absolute;
+  top:0;
+  right:0;
+}
+
+.goods .good-cont .good-price .btn {
+  display: flex;
+  flex-direction: row;
+  float: right;
+  margin-right: 6rpx;
+  width: 200rpx;
+}
+
+.goods .good-cont .good-price .btn input {
+  margin: 0;
+  flex: 4;
+  text-align: center;
+  border: 1px solid #eee;
+  font-size: 16px;
+  height: 56rpx;
+  min-height: 56rpx;
+}
+
+.goods .good-cont .good-price .btn view {
+  margin: 0;
+  border-radius: 5px 0 0 5px;
+  background: #fff;
+  flex: 3;
+  border: 1px solid #eee;
+  /* box-sizing: border-box; */
+  height: 56rpx;
+  line-height: 56rpx;
+  text-align: center;
+}
+
+.goods .good-cont .good-price .btn .btn_right {
+  border-radius: 0 5px 5px 0;
+}
+
+.total {
+  height: 90rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  z-index: 999;
+}
+
+.total .total_text {
+  display: flex;
+  color: #777;
+  flex: 5;
+  line-height: 90rpx;
+}
+
+.total .total_text radio {
+  margin: 20rpx;
+  margin-top: -6rpx;
+}
+
+radio .wx-radio-input {
+  width: 36rpx;
+  height: 36rpx;
+}
+
+.total .total_text .pay {
+  color: #ec5151;
+  text-align: right;
+}
+
+.total .total_text text {
+  font-size: 30rpx;
+  line-height: 90rpx;
+}
+
+.total .total_js {
+
+  height: 90rpx;
+  margin: 0;
+  flex: 2;
+  background-size: 100%;
+  text-align: center;
+  line-height: 90rpx;
+  font-size: 30rpx;
+  position: relative;
+}
+.total .total_js image,.total .total_js text{
+  width:100%;
+  height:100%;
+}
+.total .total_js text{
+  position: absolute;
+  left:0;
+  top:0;
+}

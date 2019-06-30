@@ -1,0 +1,19 @@
+<!--pages/xiangqing/xiangqing.wxml-->
+
+<view class='head'>
+<image src='{{str.imgUrl}}'></image>
+<text>{{str.pro_name}}</text>
+<text>{{str.price}}</text>
+</view>
+
+<view class='body'>
+<block wx:for="{{Arr}}">
+<view class='c'>{{item}}</view>
+</block>
+</view>
+
+<button bindtap='addCart'>添加购物车</button>
+<button bindtap='play'>立即购买</button>
+
+
+

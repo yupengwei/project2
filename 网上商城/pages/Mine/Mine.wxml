@@ -1,0 +1,20 @@
+  <!--pages/Mine/Mine.wxml-->
+  <view class="main">
+
+  <view class='left'>
+     <view class='search'>用户名:</view> 
+     <view class='password'>密码:</view>
+  </view> 
+
+  <view class='right'> 
+    <input class='is'></input>
+    <input class='sercet'></input>
+ </view>
+
+
+ <view class="action">
+    <button>确认</button>
+    <button>取消</button>
+ </view>
+
+  </view>

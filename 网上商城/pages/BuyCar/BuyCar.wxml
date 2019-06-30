@@ -1,0 +1,58 @@
+<!--pages/cart/cart.wxml-->
+<!--要是够车内没有数据，就行显示没有数据-->  
+ <view class="cart" wx:if="{{flag}}">
+  <view>啥也没有</view>
+</view> 
+<!--要是有数据，就显示数据-->
+<view class="cartList" wx:if="{{!flag}}"> 
+  <!--header-->
+  <view class="baoyou"></view>
+  <!--list item-->
+  <block wx:for="{{listArr}}" wx:key="{{index}}">
+
+    <view class="goods">
+      <!-- 左侧单选 -->
+      <view class="good_left">
+        <radio bindtap='dxChecked' checked='{{item.checked}}'             data-id="{{index}}" />
+   </view>
+
+      <!--中间图片-->
+      <view class="minImg">
+        <image src="{{item.imgUrl}}" class="good-img" />
+      </view>
+      <!--右侧说明部分-->
+      <view class="good-cont">
+        <!--文字说明-->
+        <view class="goods-navigator">
+          <text class="good-name">{{item.pro_name}}</text>
+          <image data-id="{{index}}" src="../../images/QQ图片20180613104935.png" bindtap="delGoods" />
+        </view>
+        <!--价钱和购物加减的父盒子-->
+        <view class="good-price">
+          <view class="btn-box">
+            <text class="price"><text>￥</text>{{item.price}}</text>
+            <view class="btn">
+              <view data-id="{{index}}" bindtap="delCount">-</view>
+              <input value="{{item.minCount}}" disabled="disabled" />
+              <view data-id="{{index}}" class="btn_right" bindtap="addCount">+</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
+  <!--footer-->
+<view class="total">
+    <view class="total_text">
+      <radio bindtap='allChecked' checked="{{qxchecked}}" />
+      <text>全选</text>
+      <text style="padding-left:68rpx">合计:</text>
+      <text class="pay">￥{{total}}</text>
+    </view>
+    <view class="total_js">  
+      <text>去结算({{goodsCount}})</text>
+    </view>
+  </view>
+</view>
+
+

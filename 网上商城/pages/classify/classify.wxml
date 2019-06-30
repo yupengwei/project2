@@ -1,0 +1,42 @@
+<!--pages/classify/classify.wxml-->
+
+
+<!-- <view class="navigator">
+  <view class='Cookie' bindtap='Cookie'>零食</view>
+  <view class='ChildCloth' bindtap='ChildCloth'>童装</view>
+  <view class='HairDressing' bindtap='HairDressing'>美容</view>
+  <view class='Bargin' bindtap='Bargin'>特价</view>
+</view> -->
+
+<view class='nav_warp'>
+<block wx:for="{{navArr}}"> 
+<text class= '{{index===num? "on":" "}}'  bindtap='navBtn' 
+   data-num='{{index}}'>{{item}}</text>
+</block>
+</view>
+
+
+<view class='list_warp'>
+<view class='flag' wx:if="{{flag}}"> 没有该商品了...</view>
+  <block wx:for="{{listArr}}">
+    <view class='list' bindtap='listBtn' id='{{item.pro_id}}'>
+     <image src='{{item.imgUrl}}' ></image>
+      <view class='pro'> {{item.pro_name}} </view>
+
+    </view>
+  </block>
+</view>
+
+
+
+
+
+
+
+
+<!-- <view class="body">
+<image src='/images/QQ图片20180610185410.jpg'></image>
+<image src='/images/QQ图片20180610185411.jpg'></image>
+<image src='/images/QQ图片20180610185412.jpg'></image>
+<image src='/images/QQ图片20180610185413.jpg'></image>
+</view> -->

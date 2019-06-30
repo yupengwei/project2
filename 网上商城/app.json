@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/home/home",
+    "pages/classify/classify",
+    "pages/BuyCar/BuyCar",
+    "pages/Mine/Mine",
+    "pages/xiangqing/xiangqing"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ff7a01",
+    "navigationBarTitleText": "漫步微光",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "backgroundColor": "#000000",
+    "backgroundTextStyle": "dark",
+    "list": [
+      {
+        "selectedIconPath": "images/QQ图片20180607184728.png",
+        "iconPath": "images/QQ图片20180607184645.png",
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/QQ图片20180607184556.png",
+        "iconPath": "images/QQ图片20180607184654.png",
+        "pagePath": "pages/classify/classify",
+        "text": "分类"
+      },
+      {
+        "selectedIconPath": "images/QQ图片20180607184707.png",
+        "iconPath": "images/QQ图片20180607184738.png",
+        "pagePath": "pages/BuyCar/BuyCar",
+        "text": "购物车"
+      },
+      {
+        "selectedIconPath": "images/QQ图片20180607184718.png",
+        "iconPath": "images/QQ图片20180607184625.png",
+        "pagePath": "pages/Mine/Mine",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
